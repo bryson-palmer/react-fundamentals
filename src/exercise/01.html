@@ -29,7 +29,6 @@
 <body>
   <script async type="module">
     
-    window.onload = () => {
       const bodyEl = document.querySelector('body')
       const rootEl = document.createElement('div')
       const divEl = document.createElement('div')
@@ -38,11 +37,8 @@
       divEl.textContent = 'Hello World'
       divEl.className = "container"
 
-      rootEl.appendChild(divEl)
-      bodyEl.appendChild(rootEl)
-    }
-
-    window.onload()
+      rootEl.append(divEl)
+      bodyEl.append(rootEl)
 
   </script>
 </body>
